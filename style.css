@@ -1,0 +1,381 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+     font-family: 'Josefin Sans', sans-serif;
+     box-sizing: border-box;
+}
+.nav{
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: sticky;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px ;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+   color:rgb(251, 12, 92);
+   transition:.4s ; 
+}
+.btn{
+    background-color: rgb(251, 12, 92);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+.logo{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: rgb(251, 12, 92);
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(bgimage.webp) no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.heading{
+    font-family: century;
+    text-align: center;
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom:50px ;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+        display: flex;
+
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+  flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{  
+    font-size: 75px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+ #intro h5{
+    color:rgb(18, 18, 20);
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+#intro p{
+    color: rgba(15, 13, 15, 0.8);
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color:rgb(251, 12, 92);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(251, 12, 92);
+    cursor: pointer;
+}
+#skl{
+
+    padding: 10px;
+    background-color: #1f0941;
+}
+.skill{
+    width: 500px;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-sizing: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.skill h1{
+    font-size: 75px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+    list-style: none;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0,24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1) ;
+
+} .bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0,24) ;
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg , rgba(236,0,140,1), rgba(252,103,103,1));
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+
+.css{
+    width: 50%;
+    animation: css 3s;
+}
+.bootstrap{
+    width: 60%;
+    animation: css 3s;
+}
+
+
+
+
+
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes bootstrap {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+.contact h1{
+    font-family: century;
+    text-align: center;
+    color: rgb(254, 250, 250);
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+#contact-me{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #1f0941;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: white;
+    padding: 20px;
+
+}
+
+.contact p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+
+}
+
+
+.contact .btn2{
+        background-color: rgb(251, 12, 92);
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 10px 25px;
+        border-radius: 30px;
+        transition: transform .4s;
+}
+.contact .btn2:hover{
+    background-color: transparent;
+    border: 2px solid rgb(251, 12, 92);
+    cursor: pointer;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 20px;
+    color: rgb(28, 27, 27);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: rgb(22, 21, 21);
+    font-size: 7px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social{
+    display: flex;
+}
+
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(251, 12, 92);
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: rgb(254, 252, 252);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: rgb(251, 12, 92);
+    bottom: 10px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width:770px){
+    .nav a {display: none;}
+    .logo{padding-left: 50px;}
+    .content{left: 30px;}
+
+}
